@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+message DemoResponse {
+	string demo_property = 1;
+}
+
+message DemoRequest {
+
+}
+
+service DemoService {
+	rpc demoUnary(DemoRequest) returns(DemoResponse) {
+	}
+
+	rpc demoStream(DemoRequest) returns(stream DemoResponse) {
+	}
+}

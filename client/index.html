@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>web grpc demo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			pre {
+				white-space: pre-wrap;
+				padding: 8px;
+			}
+
+			@media (max-width: 599px) {
+				pre {
+					font-size: 75%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<div style="display: flex;">
+
+			<div id="unary" style="width:50%">
+
+				<button onclick="demoUnary()">Demo Unary</button>
+
+				<pre id="unary-results"></pre>
+
+			</div>
+
+			<div id="stream" style="width:50%">
+
+				<button onclick="demoStream()">Demo Stream</button>
+				<button onclick="demoStreamAbort()">Abort</button>
+
+				<pre id="stream-results">
+				</pre>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
